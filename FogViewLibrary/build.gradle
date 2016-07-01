@@ -66,6 +66,9 @@ bintray {
 
         licenses = ['Apache-2.0']
        //vcs url
+
+        vcsUrl = 'https://github.com/dynamitechetan/FogView_Library.git'
+        websiteUrl = 'https://github.com/dynamitechetan/FogView_Library'
     }
     configurations = ['archives']
 }
