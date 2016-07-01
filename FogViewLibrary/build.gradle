@@ -1,0 +1,76 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+
+}
+
+
+group = 'com.dynamitechetan.fogviewlibrary' // Change this to match your package name
+version = '1.0.0' // Change this to match your version number
+
+
+
+task generateSourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier 'sources'
+}
+
+task generateJavaDocs(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath()
+            .join(File.pathSeparator))
+}
+
+task generateJavaDocsJar(type: Jar) {
+    from generateJavaDocs.destinationDir
+    classifier 'javadoc'
+}
+generateJavaDocsJar.dependsOn generateJavaDocs
+
+bintray {
+    user = 'dynamitechetan'
+    key = '847aa69008163a43e35b78f3fb450c9f18a4948c'
+    pkg {
+        repo = 'maven'
+        name = 'com.dynamitechetan.fogviewlibrary'
+
+        version {
+            name = '1.0.0'
+            desc = 'Fog View Library, removes fog on rub'
+            released  = new Date()
+            vcsTag = '1.0.0'
+        }
+
+        licenses = ['Apache-2.0']
+       //vcs url
+    }
+    configurations = ['archives']
+}
+
+artifacts {
+    archives generateJavaDocsJar
+    archives generateSourcesJar
+}

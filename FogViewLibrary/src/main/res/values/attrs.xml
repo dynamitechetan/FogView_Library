@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="fog">
+
+        <attr name="fog_image" format="reference"/>
+        <attr name="stroke_width" format="integer"/>
+    </declare-styleable>
+
+</resources>

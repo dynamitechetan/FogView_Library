@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fog="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+        <TextView
+            android:id="@+id/TextView00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:text="SOME TEXT"
+            android:layout_gravity="center_horizontal|"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/TextView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:text="some Other Text"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/TextView00"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DynamiteChetan"
+            android:textSize="25sp"
+
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/textView"
+            android:layout_below="@+id/TextView10"
+            android:layout_centerHorizontal="true" />
+
+
+
+    <com.dynamitechetan.fogviewlibrary.FogView
+        android:id="@+id/RubFog"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+            fog:fog_image="@drawable/fog_dense"
+        fog:stroke_width="100"
+        />
+
+
+
+
+</RelativeLayout>
