@@ -4,57 +4,130 @@
     xmlns:fog="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#fff">
 
 
+    <TextView
+        android:id="@+id/TextView00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4CAF50"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:text="FogView"
+        android:layout_gravity="center_horizontal|"
 
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
-        <TextView
-            android:id="@+id/TextView00"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#4CAF50"
-            android:textSize="50sp"
-            android:textStyle="bold"
-            android:text="SOME TEXT"
-            android:layout_gravity="center_horizontal|"
-
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
-        <TextView
-            android:id="@+id/TextView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#000"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            android:text="some Other Text"
-            android:layout_gravity="center_horizontal"
-            android:layout_below="@+id/TextView00"
-            android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/TextView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:text="by"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/TextView00"
+        android:layout_centerHorizontal="true" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="DynamiteChetan"
-            android:textSize="25sp"
-
+            android:textColor="#000"
+            android:textSize="40sp"
             android:layout_gravity="center_horizontal"
             android:id="@+id/textView"
             android:layout_below="@+id/TextView10"
             android:layout_centerHorizontal="true" />
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Works on all layouts"
+        android:textColor="#000"
+        android:textSize="40sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView3" />
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Awesome"
+        android:textColor="#000"
+        android:textSize="40sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="and"
+        android:textColor="#000"
+        android:textSize="40sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="it's"
+        android:textColor="#000"
+        android:textSize="40sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp" />
     <com.dynamitechetan.fogviewlibrary.FogView
         android:id="@+id/RubFog"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-            fog:fog_image="@drawable/fog_dense"
+        android:layout_height="match_parent"
+        fog:fog_image="@drawable/fog_dense"
         fog:stroke_width="100"
         />
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_marginTop="90dp"-->
+    <!--android:text="$979.50"-->
+    <!--android:textColor="@android:color/holo_green_dark"-->
+    <!--android:gravity="center"-->
+    <!--android:textSize="80sp"-->
+    <!--android:id="@+id/imageView" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textSize="20sp"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="Clear the fog to see balance"-->
+    <!--android:layout_below="@+id/imageView"-->
+    <!--/>-->
 
 
+    <!--<com.dynamitechetan.fogviewlibrary.FogView-->
+    <!--android:id="@+id/RubFog"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_marginTop="90dp"-->
 
-
+    <!--android:layout_height="110dp"-->
+    <!--fog:fog_image="@drawable/fog_dense"-->
+    <!--fog:stroke_width="100"-->
+    <!--/>-->
 </RelativeLayout>
