@@ -10,7 +10,19 @@
 If you want use this library, you can download project and import it into your workspace and add the project as a library in your android project settings.
 
 Or you can use the gradle dependency, you have to add these lines in your build.gradle file:
+# Method 1
+```xml
+repositories {
+        jcenter()
+}
 
+dependencies {
+    compile 'com.dynamitechetan.fogviewlibrary:FogViewLibrary:1.0.0'
+    
+}
+```
+If the above code didn't worked try using Method 2
+# Method 2
 ```xml
 repositories {
 	maven {
@@ -23,6 +35,16 @@ dependencies {
     
 }
 ```
+
+## BASIC USAGE
+```xml
+ <com.dynamitechetan.fogviewlibrary.FogView
+        android:id="@+id/RubFog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+  />
+```
+
 The FogView have some custom attributes, to use them , you must add this line in your xml file in the first component:
 
 ```xml
@@ -34,14 +56,6 @@ The FogView have some custom attributes, to use them , you must add this line in
 </RelativeLayout>
 ```
 
-## BASIC USAGE
-```xml
- <com.dynamitechetan.fogviewlibrary.FogView
-        android:id="@+id/RubFog"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-  />
-```
 ## USING A CUSTOM FOG IMAGE
 
 ```xml
