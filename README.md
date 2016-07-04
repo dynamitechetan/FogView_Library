@@ -1,5 +1,5 @@
 # Fog View Android Library
-
+### Min SDK 8 (Android 2.2–2.2.3 Froyo)
 ## Screnshots
 
 ![Screenshot](screenshots/screen1.gif)    ![Screenshot](screenshots/screen2.gif)
@@ -83,4 +83,6 @@ Default Stroke Width is 75
 ```
 
 
-## Contributions are welcome!!
+## License
+Copyright (c) 2016 Chetan Kaushik
+Licensed under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
