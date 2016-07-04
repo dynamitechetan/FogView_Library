@@ -1,5 +1,6 @@
 # Fog View Android Library
-### Min SDK 8 (Android 2.2–2.2.3 Froyo)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Fog%20View%20Android%20Library-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/3833)
+#### Min SDK 8 (Android 2.2–2.2.3 Froyo)
 ## Screnshots
 
 ![Screenshot](screenshots/screen1.gif)    ![Screenshot](screenshots/screen2.gif)
