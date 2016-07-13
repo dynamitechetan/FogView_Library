@@ -1,5 +1,7 @@
 # Fog View Android Library
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Fog%20View%20Android%20Library-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/3833)
+[![License](https://img.shields.io/badge/License-Apache%202-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
+[![API](https://img.shields.io/badge/API-8%2B-brightred.svg)](https://github.com/dynamitechetan/FogView_Library)
 #### Min SDK 8 (Android 2.2–2.2.3 Froyo)
 ## Screnshots
 
