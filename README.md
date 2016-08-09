@@ -38,6 +38,16 @@ dependencies {
     
 }
 ```
+# or Using Maven:
+```xml
+<dependency>
+<groupId>com.dynamitechetan.fogviewlibrary</groupId>
+<artifactId>FogViewLibrary</artifactId>
+<version>1.0.0</version>
+<type>pom</type> 
+</dependency>
+```
+
 
 ## BASIC USAGE
 ```xml
